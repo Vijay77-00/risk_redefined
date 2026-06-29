@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance, Loans & Mutual Funds | Risk Redefined</title>
+    <meta name="description" content="Risk Redefined Insurance Marketing LLP — your single-window partner for insurance, loans, and mutual funds.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .slide { opacity: 0; transition: opacity 0.8s ease-in-out; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .slide.active { opacity: 1; position: absolute; }
+        .slider-wrapper { position: relative; width: 100%; height: 100%; }
+        html { scroll-padding-top: 6rem; }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50 selection:bg-blue-200">
+    <nav class="flex items-center justify-between px-6 py-5 lg:px-12 bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+        <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-gray-900 flex items-center gap-2.5">
+            <img src="main_logo.png" alt="Risk Redefined Logo" class="w-14 h-14 shrink-0 rounded-xl">
+            <span class="leading-none">Risk <span class="text-gray-900">Redefined Insurance Marketing LLP</span></span>
+        </a>
+        <div class="hidden md:flex items-center space-x-8 font-medium text-gray-600 text-sm uppercase tracking-wide">
+            <a href="index.html" class="hover:text-blue-600 transition-colors text-blue-600">Home</a>
+            <a href="services.html" class="hover:text-blue-600 transition-colors">Services</a>
+            <a href="about.html" class="hover:text-blue-600 transition-colors">About Us</a>
+            <a href="contact.html" class="px-5 py-2.5 text-white bg-gray-900 rounded-full hover:bg-blue-600 transition-all shadow-md">Book a Call</a>
+        </div>
+        <!-- Mobile menu -->
+        <details class="md:hidden relative">
+            <summary class="list-none cursor-pointer p-2 -mr-2 text-gray-700">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </summary>
+            <div class="absolute right-0 mt-3 w-56 bg-white rounded-2xl shadow-xl border border-gray-100 p-3 flex flex-col gap-1 text-sm font-medium text-gray-700">
+                <a href="index.html" class="px-4 py-2.5 rounded-xl hover:bg-gray-50">Home</a>
+                <a href="services.html" class="px-4 py-2.5 rounded-xl hover:bg-gray-50">Services</a>
+                <a href="about.html" class="px-4 py-2.5 rounded-xl hover:bg-gray-50">About Us</a>
+                <a href="contact.html" class="px-4 py-2.5 rounded-xl bg-gray-900 text-white text-center mt-1">Book a Call</a>
+            </div>
+        </details>
+    </nav>
+    <section class="w-full mx-auto px-6 py-16 lg:py-24 lg:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="space-y-8 z-10">
+            <p class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 bg-blue-50 px-4 py-2 rounded-full">Insurance &bull; Loans &bull; Mutual Funds</p>
+            <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight text-gray-900 tracking-tight">
+                Your Trusted Partner For <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Insurance, Loans &amp; Mutual Funds.</span>
+            </h1>
+            <p class="text-lg text-gray-600 leading-relaxed max-w-lg">Securing your family's tomorrow, today!</p>
+            <div class="pt-2 flex flex-wrap gap-4">
+                <a href="contact.html" class="px-8 py-4 text-sm font-bold text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">Book A Call</a>
+                <a href="services.html" class="px-8 py-4 text-sm font-bold text-gray-700 bg-white border border-gray-200 rounded-full hover:border-gray-300 transition-colors">Explore Services</a>
+            </div>
+        </div>
+        <div class="relative w-full rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white" style="padding-bottom: 56.25%;">
+            <div class="absolute inset-0">
+                <div class="slide active w-full h-full"><img src="1.png" class="w-full h-full object-contain" alt="Travel Insurance"></div>
+                <div class="slide w-full h-full"><img src="2.png" class="w-full h-full object-contain" alt="Health Insurance"></div>
+                <div class="slide w-full h-full"><img src="3.png" class="w-full h-full object-contain" alt="Life Insurance"></div>
+                <div class="slide w-full h-full"><img src="4.png" class="w-full h-full object-contain" alt="Mutual Funds"></div>
+                <div class="slide w-full h-full"><img src="5.png" class="w-full h-full object-contain" alt="Loans"></div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+        <div class="text-center mb-12">
+            <p class="text-sm font-bold uppercase tracking-widest text-blue-600 mb-3">What We Offer</p>
+            <h2 class="text-4xl font-extrabold text-gray-900">One Window. Every Solution.</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">From protecting your family to growing your wealth and financing your dreams &mdash; explore our full suite of services.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <a href="life-insurance.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors p-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2107/2107845.png" class="w-7 h-7 object-contain" alt="Life Insurance">
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Life Insurance</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Secure your family's financial future and get long-term peace of mind with plans tailored to your needs.</p>
+                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-blue-600">Learn more
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+            </a>
+            <a href="health-insurance.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-12 h-12 bg-purple-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-100 transition-colors p-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4022/4022659.png" class="w-7 h-7 object-contain" alt="Health Insurance">
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Health Insurance</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Protect yourself and your loved ones against unexpected medical expenses with comprehensive healthcare coverage.</p>
+                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-purple-600">Learn more
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+            </a>
+            <a href="motor-insurance.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-12 h-12 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-100 transition-colors p-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/741/741407.png" class="w-7 h-7 object-contain" alt="Motor Insurance">
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Motor Insurance</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Drive with complete peace of mind with coverage that protects your vehicle against accidents, theft, and third-party liabilities.</p>
+                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-green-600">Learn more
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+            </a>
+            <a href="property-insurance.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-orange-100 transition-colors p-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/602/602182.png" class="w-7 h-7 object-contain" alt="Property Insurance">
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Property Insurance</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Safeguard your commercial or business spaces against unexpected damages from fires, natural disasters, or accidents.</p>
+                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-orange-600">Learn more
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+            </a>
+            <a href="travel-insurance.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-12 h-12 bg-sky-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-100 transition-colors p-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6292/6292085.png" class="w-7 h-7 object-contain" alt="Travel Insurance">
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Travel Insurance</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Travel stress-free by securing yourself and your family against any unforeseen challenges or setbacks.</p>
+                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-sky-600">Learn more
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+            </a>
+            <a href="mutual-funds.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-12 h-12 bg-indigo-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-100 transition-colors p-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/855/855288.png" class="w-7 h-7 object-contain" alt="Mutual Funds">
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Mutual Funds</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Grow your wealth over time by investing in professionally managed portfolios built to match your goals.</p>
+                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-indigo-600">Learn more
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+            </a>
+            <a href="home-loans.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-12 h-12 bg-rose-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-rose-100 transition-colors p-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2163/2163350.png" class="w-7 h-7 object-contain" alt="Home Loans">
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Home Loans</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Turn your dream of homeownership into reality with affordable rates, flexible repayment, and simple processing.</p>
+                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-rose-600">Learn more
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+            </a>
+            <a href="loan-against-property.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-teal-100 transition-colors p-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4350/4350279.png" class="w-7 h-7 object-contain" alt="Loan Against Property">
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Loan Against Property</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Unlock the hidden value of your property to fund business expansion, education, or personal needs.</p>
+                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-teal-600">Learn more
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+            </a>
+        </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            <div class="lg:sticky lg:top-28">
+                <h2 class="text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">Why Trust Us?</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-md">Partner with experts with over 38 years of experience, dedicated to securing your financial future through honest and tailored guidance.</p>
+            </div>
+            <div class="space-y-8">
+                <div class="flex gap-4">
+                    <div class="w-12 h-12 shrink-0 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold text-xl">1</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900">Proven Expertise</h4>
+                        <p class="mt-1 text-gray-600 leading-relaxed">Decades of deep experience navigating the insurance and financial markets to maximize your wealth.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-12 h-12 shrink-0 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold text-xl">2</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900">Tailored to You</h4>
+                        <p class="mt-1 text-gray-600 leading-relaxed">No cookie-cutter plans. We design unique, custom strategies built around your exact goals, timelines, and affordability.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-12 h-12 shrink-0 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold text-xl">3</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900">24/7 Support</h4>
+                        <p class="mt-1 text-gray-600 leading-relaxed">A dedicated, responsive team available around the clock to assist you whenever you need us.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-12 h-12 shrink-0 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold text-xl">4</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900">Absolute Transparency</h4>
+                        <p class="mt-1 text-gray-600 leading-relaxed">Zero hidden fees, clear terms, and total honesty. You'll always know exactly where you stand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            <div class="lg:sticky lg:top-28">
+                <h2 class="text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">How Does The Process Work?</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-md">Our streamlined approach makes securing your financial future simple and hassle-free.</p>
+            </div>
+            <div class="space-y-8">
+                <div class="flex gap-4">
+                    <div class="w-12 h-12 shrink-0 bg-green-100 text-green-700 rounded-full flex items-center justify-center font-bold text-xl">1</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900">Initial Consultation</h4>
+                        <p class="mt-1 text-gray-600 leading-relaxed">We understand your unique goals, current standing, and long-term needs — via an in-person meeting or a call, whichever you prefer.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-12 h-12 shrink-0 bg-green-100 text-green-700 rounded-full flex items-center justify-center font-bold text-xl">2</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900">Custom Strategy</h4>
+                        <p class="mt-1 text-gray-600 leading-relaxed">Our experts design a tailored financial portfolio mapped precisely to your goals.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-12 h-12 shrink-0 bg-green-100 text-green-700 rounded-full flex items-center justify-center font-bold text-xl">3</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900">Seamless Implementation</h4>
+                        <p class="mt-1 text-gray-600 leading-relaxed">We handle all the heavy lifting, paperwork, and setup to activate your plan efficiently.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-12 h-12 shrink-0 bg-green-100 text-green-700 rounded-full flex items-center justify-center font-bold text-xl">4</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900">Continuous Review</h4>
+                        <p class="mt-1 text-gray-600 leading-relaxed">Regular check-ins ensure your strategy adapts dynamically as your life, goals, and the markets evolve.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="max-w-4xl mx-auto px-6 lg:px-12 py-16">
+        <div class="text-center mb-12">
+            <p class="text-sm font-bold uppercase tracking-widest text-blue-600 mb-3">Good to Know</p>
+            <h2 class="text-4xl font-extrabold text-gray-900">Frequently Asked Questions</h2>
+        </div>
+        <div class="space-y-4">
+            <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm p-6 [&_svg]:open:rotate-45">
+                <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-lg text-gray-900">
+                    <span class="pr-4">Are you an insurance company or a financial advisory platform?</span>
+                    <svg class="w-6 h-6 shrink-0 text-blue-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                </summary>
+                <p class="mt-4 text-gray-600 leading-relaxed">We are a trusted financial solutions partner, not a single insurance company. We partner with India's leading, IRDAI-regulated insurance providers and asset management companies to bring you a curated selection of life insurance, health insurance, mutual funds, and loan products under one roof — giving you completely unbiased, tailored recommendations based on your specific goals.</p>
+            </details>
+            <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm p-6 [&_svg]:open:rotate-45">
+                <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-lg text-gray-900">
+                    <span class="pr-4">How do you choose the right financial or insurance plan for me?</span>
+                    <svg class="w-6 h-6 shrink-0 text-blue-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                </summary>
+                <p class="mt-4 text-gray-600 leading-relaxed">We don't believe in a one-size-fits-all approach. We start with an Initial Consultation to understand your financial standing, milestones, and family needs. Using these insights, our experts analyze the market to build a Custom Strategy mapped precisely to your life goals, ensuring you only pay for the coverage and investments you actually need.</p>
+            </details>
+            <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm p-6 [&_svg]:open:rotate-45">
+                <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-lg text-gray-900">
+                    <span class="pr-4">What is the difference between Term Life Insurance and Permanent/Endowment plans?</span>
+                    <svg class="w-6 h-6 shrink-0 text-blue-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                </summary>
+                <p class="mt-4 text-gray-600 leading-relaxed">Term Life Insurance is pure, affordable protection that pays a guaranteed lump sum to your family if something happens to you during the policy term — ideal for high-cover needs like protecting a home loan or your child's education. Permanent or Endowment plans combine life cover with a savings or investment component, building cash value over time that you can access later in life.</p>
+            </details>
+            <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm p-6 [&_svg]:open:rotate-45">
+                <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-lg text-gray-900">
+                    <span class="pr-4">How much health insurance coverage do I actually need?</span>
+                    <svg class="w-6 h-6 shrink-0 text-blue-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                </summary>
+                <p class="mt-4 text-gray-600 leading-relaxed">While a basic corporate health policy is a good start, it is rarely enough for major emergencies or rising healthcare costs. We generally recommend a base cover or a Super Top-up plan that accounts for your family size, medical history, and city of residence. During our discovery call, we can calculate the exact buffer you need to protect your savings.</p>
+            </details>
+            <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm p-6 [&_svg]:open:rotate-45">
+                <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-lg text-gray-900">
+                    <span class="pr-4">Why invest in Mutual Funds through a platform like yours instead of doing it myself?</span>
+                    <svg class="w-6 h-6 shrink-0 text-blue-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                </summary>
+                <p class="mt-4 text-gray-600 leading-relaxed">Navigating thousands of schemes, market volatility, and asset allocation can be overwhelming. We provide expert portfolio management, helping you balance risk and reward based on your benchmarks, plus Continuous Reviews to dynamically rebalance your investments as the market shifts or your life goals change.</p>
+            </details>
+            <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm p-6 [&_svg]:open:rotate-45">
+                <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-lg text-gray-900">
+                    <span class="pr-4">Are there any hidden fees or charges?</span>
+                    <svg class="w-6 h-6 shrink-0 text-blue-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                </summary>
+                <p class="mt-4 text-gray-600 leading-relaxed">Absolutely not. We pride ourselves on Absolute Transparency — no hidden fees, structural surprises, or onboarding charges. All premium costs, fund management fees, and policy terms are disclosed upfront before implementation, so you can make an informed decision with total peace of mind.</p>
+            </details>
+        </div>
+    </section>
+    <section id="contact" class="bg-gray-900 py-20 text-white rounded-t-[3rem] mt-8">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold mb-4">Let's Connect Today!</h2>
+                <p class="text-gray-400">Book a free consultation. Tell us a little about you and pick a time that works.</p>
+            </div>
+            <form id="bookForm" action="#" method="POST" class="space-y-6 bg-white/5 p-6 sm:p-8 rounded-3xl backdrop-blur-sm border border-white/10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
+                        <input type="text" name="name" class="w-full px-5 py-4 rounded-xl bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition" placeholder="e.g. Jane Doe" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Email ID</label>
+                        <input type="email" name="email" class="w-full px-5 py-4 rounded-xl bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition" placeholder="jane@example.com" required>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Phone No.</label>
+                        <input type="tel" name="phone" class="w-full px-5 py-4 rounded-xl bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition" placeholder="+91 00000 00000" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Service Interested In</label>
+                        <select name="service" class="w-full px-5 py-4 rounded-xl bg-gray-800 border border-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="Life Insurance">Life Insurance</option>
+                            <option value="Health Insurance">Health Insurance</option>
+                            <option value="Motor Insurance">Motor Insurance</option>
+                            <option value="Property Insurance">Property Insurance</option>
+                            <option value="Travel Insurance">Travel Insurance</option>
+                            <option value="Mutual Funds">Mutual Funds</option>
+                            <option value="Home Loans">Home Loans</option>
+                            <option value="Loan Against Property">Loan Against Property</option>
+                            <option value="Not sure yet">Not sure yet &mdash; help me choose</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Preferred Date</label>
+                        <input type="date" name="date" class="w-full px-5 py-4 rounded-xl bg-gray-800 border border-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition [color-scheme:dark]" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Preferred Time</label>
+                        <input type="time" name="time" class="w-full px-5 py-4 rounded-xl bg-gray-800 border border-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition [color-scheme:dark]" required>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                    <button type="submit" class="flex-1 py-4 text-white bg-blue-600 rounded-xl font-bold text-lg hover:bg-blue-500 transition-colors shadow-lg">
+                        Book My Call
+                    </button>
+                    <button type="button" id="waBtn" class="flex-1 py-4 text-white bg-green-600 rounded-xl font-bold text-lg hover:bg-green-500 transition-colors shadow-lg flex items-center justify-center gap-2">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.37-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.26-.29.57-.36.76-.36l.55.01c.18.01.41-.07.64.49.24.57.81 1.99.88 2.13.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.19.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.75 1.87.89.28.14.46.21.53.32.07.12.07.66-.17 1.34z"/></svg>
+                        WhatsApp Us
+                    </button>
+                </div>
+                <p class="text-xs text-gray-500 text-center pt-1">By submitting, you agree to be contacted by our advisors. No spam, ever.</p>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-gray-950 text-gray-400 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+            <div class="space-y-4">
+                <div class="text-2xl font-extrabold tracking-tighter text-white flex items-center gap-2.5">
+                    <img src="main_logo.png" alt="Risk Redefined Logo" class="w-9 h-9 shrink-0 rounded-lg">
+                    Risk Redefined
+                </div>
+                <p class="text-sm leading-relaxed max-w-xs">Risk Redefined Insurance Marketing LLP &mdash; your single-window partner for insurance, loans, and mutual funds since 2017.</p>
+            </div>
+            <div>
+                <h5 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Services</h5>
+                <ul class="space-y-2.5 text-sm columns-1"><li><a href="life-insurance.html" class="hover:text-white transition-colors">Life Insurance</a></li><li><a href="health-insurance.html" class="hover:text-white transition-colors">Health Insurance</a></li><li><a href="motor-insurance.html" class="hover:text-white transition-colors">Motor Insurance</a></li><li><a href="property-insurance.html" class="hover:text-white transition-colors">Property Insurance</a></li><li><a href="travel-insurance.html" class="hover:text-white transition-colors">Travel Insurance</a></li><li><a href="mutual-funds.html" class="hover:text-white transition-colors">Mutual Funds</a></li><li><a href="home-loans.html" class="hover:text-white transition-colors">Home Loans</a></li><li><a href="loan-against-property.html" class="hover:text-white transition-colors">Loan Against Property</a></li></ul>
+            </div>
+            <div>
+                <h5 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Company</h5>
+                <ul class="space-y-2.5 text-sm">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-white transition-colors">All Services</a></li>
+                    <li><a href="index.html#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition-colors">Book a Call</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Get in Touch</h5>
+                <ul class="space-y-2.5 text-sm">
+                    <li>89, 1st Floor, 16th Cross, Margosa Rd,<br>Malleshwaram, Bengaluru,<br>Karnataka 560055</li>
+                    <li><a href="mailto:info@riskredefined.in" class="hover:text-white transition-colors">info@riskredefined.in</a></li>
+                    <li><a href="tel:+919343867723" class="hover:text-white transition-colors">+91 9343867723</a></li>
+                </ul>
+                <a href="https://wa.me/919343867723" class="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-green-600 text-white rounded-full text-sm font-semibold hover:bg-green-500 transition-colors">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.37-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.26-.29.57-.36.76-.36l.55.01c.18.01.41-.07.64.49.24.57.81 1.99.88 2.13.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.19.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.75 1.87.89.28.14.46.21.53.32.07.12.07.66-.17 1.34z"/></svg>
+                    Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 mt-12 pt-6 border-t border-white/10 text-xs flex flex-col sm:flex-row gap-2 justify-between">
+            <p>&copy; 2025 Risk Redefined Insurance Marketing LLP. All rights reserved.</p>
+            <p>Insurance products are subject to IRDAI regulations. Mutual fund investments are subject to market risks.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slide');
+            function nextSlide() {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }
+            if (slides.length > 0) setInterval(nextSlide, 4000);
+        });
+    </script>
+    <script>
+        (function () {
+            var form = document.getElementById('bookForm');
+            var waBtn = document.getElementById('waBtn');
+            var EMAIL = 'info@riskredefined.in';
+            var WHATSAPP = '919343867723';
+
+            function getData() {
+                var f = form.elements;
+                return {
+                    name: (f.name.value || '').trim(),
+                    email: (f.email.value || '').trim(),
+                    phone: (f.phone.value || '').trim(),
+                    service: (f.service.value || '').trim(),
+                    date: (f.date.value || '').trim(),
+                    time: (f.time.value || '').trim()
+                };
+            }
+
+            function buildBody(d) {
+                return 'Hi Risk Redefined,\n\n' +
+                    'I\u2019d like to book a call. Here are my details:\n\n' +
+                    'Name: ' + d.name + '\n' +
+                    'Email: ' + d.email + '\n' +
+                    'Phone: ' + d.phone + '\n' +
+                    'Service Interested In: ' + d.service + '\n' +
+                    'Preferred Date: ' + d.date + '\n' +
+                    'Preferred Time: ' + d.time + '\n\n' +
+                    'Thank you.';
+            }
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                if (!form.reportValidity()) return;
+                var d = getData();
+                var subject = 'Call Booking Request \u2013 ' + (d.service || 'General Enquiry');
+                var href = 'mailto:' + EMAIL +
+                    '?subject=' + encodeURIComponent(subject) +
+                    '&body=' + encodeURIComponent(buildBody(d));
+                window.location.href = href;
+            });
+
+            waBtn.addEventListener('click', function () {
+                if (!form.reportValidity()) return;
+                var d = getData();
+                var url = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(buildBody(d));
+                window.open(url, '_blank', 'noopener');
+            });
+        })();
+    </script>
+</body>
+</html>
