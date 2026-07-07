@@ -11,18 +11,22 @@
         .slide.active { opacity: 1; position: absolute; }
         .slider-wrapper { position: relative; width: 100%; height: 100%; }
         html { scroll-padding-top: 6rem; }
+            .brand-name { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 500; letter-spacing: normal; }
+            .t-slide { opacity: 0; transition: opacity 0.7s ease-in-out; position: absolute; top: 0; left: 0; width: 100%; }
+        .t-slide.active { opacity: 1; position: relative; }
     </style>
 </head>
 <body class="font-sans text-gray-800 antialiased bg-white selection:bg-blue-200">
     <nav class="flex items-center justify-between px-6 py-5 lg:px-12 bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
-        <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-gray-900 flex items-center gap-2.5">
-            <img src="main_logo.png" alt="Risk Redefined Logo" class="w-14 h-14 shrink-0 rounded-xl">
-            <span class="leading-none">Risk <span class="text-gray-900">Redefined Insurance Marketing LLP</span></span>
+        <a href="index.html" class="text-xl font-extrabold tracking-tighter text-gray-900 flex items-center gap-2.5">
+            <img src="main_logo.png" alt="Risk Redefined Logo" class="w-11 h-11 shrink-0 rounded-xl">
+            <span class="leading-none brand-name">Risk <span class="text-gray-900">Redefined Insurance Marketing LLP</span></span>
         </a>
         <div class="hidden md:flex items-center space-x-8 font-medium text-gray-600 text-sm uppercase tracking-wide">
             <a href="index.html" class="hover:text-blue-600 transition-colors text-blue-600">Home</a>
             <a href="services.html" class="hover:text-blue-600 transition-colors">Services</a>
             <a href="about.html" class="hover:text-blue-600 transition-colors">About Us</a>
+            <a href="testimonials.html" class="hover:text-blue-600 transition-colors">Testimonials</a>
             <a href="contact.html" class="px-5 py-2.5 text-white bg-gray-900 rounded-full hover:bg-blue-600 transition-all shadow-md">Book a Call</a>
         </div>
         <!-- Mobile menu -->
@@ -34,6 +38,7 @@
                 <a href="index.html" class="px-4 py-2.5 rounded-xl hover:bg-gray-50">Home</a>
                 <a href="services.html" class="px-4 py-2.5 rounded-xl hover:bg-gray-50">Services</a>
                 <a href="about.html" class="px-4 py-2.5 rounded-xl hover:bg-gray-50">About Us</a>
+                <a href="testimonials.html" class="px-4 py-2.5 rounded-xl hover:bg-gray-50">Testimonials</a>
                 <a href="contact.html" class="px-4 py-2.5 rounded-xl bg-gray-900 text-white text-center mt-1">Book a Call</a>
             </div>
         </details>
@@ -60,100 +65,102 @@
             </div>
         </div>
     </section>
-    <section id="services" class="max-w-7xl mx-auto px-6 lg:px-12 py-16 bg-white">
+    <div class="bg-gray-50">
+    <section id="services" class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
         <div class="text-center mb-12">
             <p class="text-sm font-bold uppercase tracking-widest text-blue-600 mb-3">What We Offer</p>
             <h2 class="text-4xl font-extrabold text-gray-900">Our Services.</h2>
             <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">From protecting your family to growing your wealth and financing your dreams &mdash; explore our full suite of services.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <a href="life-insurance.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors p-2">
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            <a href="life-insurance.html" class="block p-5 md:p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group text-center md:text-left">
+                <div class="w-12 h-12 bg-blue-50 rounded-2xl hidden md:flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors p-2">
                     <img src="https://cdn-icons-png.flaticon.com/512/2107/2107845.png" class="w-7 h-7 object-contain" alt="Life Insurance">
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-gray-900">Life Insurance</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Secure your family's financial future and get long-term peace of mind with plans tailored to your needs.</p>
-                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-blue-600">Learn more
+                <h3 class="text-base md:text-xl font-bold md:mb-3 text-gray-900">Life Insurance</h3>
+                <p class="hidden md:block text-gray-500 text-sm leading-relaxed">Secure your family's financial future and get long-term peace of mind with plans tailored to your needs.</p>
+                <span class="hidden md:inline-flex items-center gap-1 mt-4 text-sm font-semibold text-blue-600">Learn more
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </span>
             </a>
-            <a href="health-insurance.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-12 h-12 bg-purple-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-100 transition-colors p-2">
+            <a href="health-insurance.html" class="block p-5 md:p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group text-center md:text-left">
+                <div class="w-12 h-12 bg-purple-50 rounded-2xl hidden md:flex items-center justify-center mb-6 group-hover:bg-purple-100 transition-colors p-2">
                     <img src="https://cdn-icons-png.flaticon.com/512/4022/4022659.png" class="w-7 h-7 object-contain" alt="Health Insurance">
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-gray-900">Health Insurance</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Protect yourself and your loved ones against unexpected medical expenses with comprehensive healthcare coverage.</p>
-                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-purple-600">Learn more
+                <h3 class="text-base md:text-xl font-bold md:mb-3 text-gray-900">Health Insurance</h3>
+                <p class="hidden md:block text-gray-500 text-sm leading-relaxed">Protect yourself and your loved ones against unexpected medical expenses with comprehensive healthcare coverage.</p>
+                <span class="hidden md:inline-flex items-center gap-1 mt-4 text-sm font-semibold text-purple-600">Learn more
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </span>
             </a>
-            <a href="motor-insurance.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-12 h-12 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-100 transition-colors p-2">
+            <a href="motor-insurance.html" class="block p-5 md:p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group text-center md:text-left">
+                <div class="w-12 h-12 bg-green-50 rounded-2xl hidden md:flex items-center justify-center mb-6 group-hover:bg-green-100 transition-colors p-2">
                     <img src="https://cdn-icons-png.flaticon.com/512/741/741407.png" class="w-7 h-7 object-contain" alt="Motor Insurance">
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-gray-900">Motor Insurance</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Drive with complete peace of mind with coverage that protects your vehicle against accidents, theft, and third-party liabilities.</p>
-                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-green-600">Learn more
+                <h3 class="text-base md:text-xl font-bold md:mb-3 text-gray-900">Motor Insurance</h3>
+                <p class="hidden md:block text-gray-500 text-sm leading-relaxed">Drive with complete peace of mind with coverage that protects your vehicle against accidents, theft, and third-party liabilities.</p>
+                <span class="hidden md:inline-flex items-center gap-1 mt-4 text-sm font-semibold text-green-600">Learn more
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </span>
             </a>
-            <a href="property-insurance.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-orange-100 transition-colors p-2">
+            <a href="property-insurance.html" class="block p-5 md:p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group text-center md:text-left">
+                <div class="w-12 h-12 bg-orange-50 rounded-2xl hidden md:flex items-center justify-center mb-6 group-hover:bg-orange-100 transition-colors p-2">
                     <img src="https://cdn-icons-png.flaticon.com/512/602/602182.png" class="w-7 h-7 object-contain" alt="Property Insurance">
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-gray-900">Property Insurance</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Safeguard your commercial or business spaces against unexpected damages from fires, natural disasters, or accidents.</p>
-                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-orange-600">Learn more
+                <h3 class="text-base md:text-xl font-bold md:mb-3 text-gray-900">Property Insurance</h3>
+                <p class="hidden md:block text-gray-500 text-sm leading-relaxed">Safeguard your commercial or business spaces against unexpected damages from fires, natural disasters, or accidents.</p>
+                <span class="hidden md:inline-flex items-center gap-1 mt-4 text-sm font-semibold text-orange-600">Learn more
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </span>
             </a>
-            <a href="travel-insurance.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-12 h-12 bg-sky-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-100 transition-colors p-2">
+            <a href="travel-insurance.html" class="block p-5 md:p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group text-center md:text-left">
+                <div class="w-12 h-12 bg-sky-50 rounded-2xl hidden md:flex items-center justify-center mb-6 group-hover:bg-sky-100 transition-colors p-2">
                     <img src="https://cdn-icons-png.flaticon.com/512/6292/6292085.png" class="w-7 h-7 object-contain" alt="Travel Insurance">
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-gray-900">Travel Insurance</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Travel stress-free by securing yourself and your family against any unforeseen challenges or setbacks.</p>
-                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-sky-600">Learn more
+                <h3 class="text-base md:text-xl font-bold md:mb-3 text-gray-900">Travel Insurance</h3>
+                <p class="hidden md:block text-gray-500 text-sm leading-relaxed">Travel stress-free by securing yourself and your family against any unforeseen challenges or setbacks.</p>
+                <span class="hidden md:inline-flex items-center gap-1 mt-4 text-sm font-semibold text-sky-600">Learn more
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </span>
             </a>
-            <a href="mutual-funds.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-12 h-12 bg-indigo-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-100 transition-colors p-2">
+            <a href="mutual-funds.html" class="block p-5 md:p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group text-center md:text-left">
+                <div class="w-12 h-12 bg-indigo-50 rounded-2xl hidden md:flex items-center justify-center mb-6 group-hover:bg-indigo-100 transition-colors p-2">
                     <img src="https://cdn-icons-png.flaticon.com/512/855/855288.png" class="w-7 h-7 object-contain" alt="Mutual Funds">
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-gray-900">Mutual Funds</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Grow your wealth over time by investing in professionally managed portfolios built to match your goals.</p>
-                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-indigo-600">Learn more
+                <h3 class="text-base md:text-xl font-bold md:mb-3 text-gray-900">Mutual Funds</h3>
+                <p class="hidden md:block text-gray-500 text-sm leading-relaxed">Grow your wealth over time by investing in professionally managed portfolios built to match your goals.</p>
+                <span class="hidden md:inline-flex items-center gap-1 mt-4 text-sm font-semibold text-indigo-600">Learn more
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </span>
             </a>
-            <a href="home-loans.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-12 h-12 bg-rose-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-rose-100 transition-colors p-2">
+            <a href="home-loans.html" class="block p-5 md:p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group text-center md:text-left">
+                <div class="w-12 h-12 bg-rose-50 rounded-2xl hidden md:flex items-center justify-center mb-6 group-hover:bg-rose-100 transition-colors p-2">
                     <img src="https://cdn-icons-png.flaticon.com/512/2163/2163350.png" class="w-7 h-7 object-contain" alt="Home Loans">
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-gray-900">Home Loans</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Turn your dream of homeownership into reality with affordable rates, flexible repayment, and simple processing.</p>
-                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-rose-600">Learn more
+                <h3 class="text-base md:text-xl font-bold md:mb-3 text-gray-900">Home Loans</h3>
+                <p class="hidden md:block text-gray-500 text-sm leading-relaxed">Turn your dream of homeownership into reality with affordable rates, flexible repayment, and simple processing.</p>
+                <span class="hidden md:inline-flex items-center gap-1 mt-4 text-sm font-semibold text-rose-600">Learn more
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </span>
             </a>
-            <a href="loan-against-property.html" class="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-teal-100 transition-colors p-2">
-                    <img src="https://cdn-icons-png.flaticon.com/512/4350/4350279.png" class="w-7 h-7 object-contain" alt="Loan Against Property">
+            <a href="loan-against-property.html" class="block p-5 md:p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group text-center md:text-left">
+                <div class="w-12 h-12 bg-teal-50 rounded-2xl hidden md:flex items-center justify-center mb-6 group-hover:bg-teal-100 transition-colors p-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4350/4350279.png" class="w-7 h-7 object-contain" alt="Loan Against Property / Lease Rental Discounting">
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-gray-900">Loan Against Property</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Unlock the hidden value of your property to fund business expansion, education, or personal needs.</p>
-                <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-teal-600">Learn more
+                <h3 class="text-base md:text-xl font-bold md:mb-3 text-gray-900">Loan Against Property / Lease Rental Discounting</h3>
+                <p class="hidden md:block text-gray-500 text-sm leading-relaxed">Unlock the hidden value of your property to fund business expansion, education, or personal needs.</p>
+                <span class="hidden md:inline-flex items-center gap-1 mt-4 text-sm font-semibold text-teal-600">Learn more
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </span>
             </a>
         </div>
     </section>
+    </div>
     <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 bg-white">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-            <div class="lg:sticky lg:top-28">
+            <div class="lg:sticky lg:top-28 bg-blue-100 rounded-3xl p-8 lg:p-10">
                 <h2 class="text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">Why Trust Us?</h2>
-                <p class="mt-4 text-lg text-gray-600 max-w-md">Partner with experts with over 38 years of experience, dedicated to securing your financial future through honest and tailored guidance.</p>
+                <p class="mt-4 text-lg text-gray-700 max-w-md">Partner with experts with over 37+ years of experience, dedicated to securing your financial future through honest and tailored guidance.</p>
             </div>
             <div class="space-y-8">
                 <div class="flex gap-4">
@@ -173,8 +180,8 @@
                 <div class="flex gap-4">
                     <div class="w-12 h-12 shrink-0 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold text-xl">3</div>
                     <div>
-                        <h4 class="text-xl font-bold text-gray-900">24/7 Support</h4>
-                        <p class="mt-1 text-gray-600 leading-relaxed">A dedicated, responsive team available around the clock to assist you whenever you need us.</p>
+                        <h4 class="text-xl font-bold text-gray-900">Complete Support</h4>
+                        <p class="mt-1 text-gray-600 leading-relaxed">A dedicated, responsive team available to assist you throughout your journey.</p>
                     </div>
                 </div>
                 <div class="flex gap-4">
@@ -189,9 +196,9 @@
     </section>
     <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 bg-white">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-            <div class="lg:sticky lg:top-28">
+            <div class="lg:sticky lg:top-28 bg-green-100 rounded-3xl p-8 lg:p-10">
                 <h2 class="text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">How Does The Process Work?</h2>
-                <p class="mt-4 text-lg text-gray-600 max-w-md">Our streamlined approach makes securing your financial future simple and hassle-free.</p>
+                <p class="mt-4 text-lg text-gray-700 max-w-md">Our streamlined approach makes securing your financial future simple and hassle-free.</p>
             </div>
             <div class="space-y-8">
                 <div class="flex gap-4">
@@ -222,6 +229,140 @@
                         <p class="mt-1 text-gray-600 leading-relaxed">Regular check-ins ensure your strategy adapts dynamically as your life, goals, and the markets evolve.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="bg-gradient-to-b from-gray-50 to-white py-20 border-t border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-12">
+                <p class="text-sm font-bold uppercase tracking-widest text-blue-600 mb-3">Client Stories</p>
+                <h2 class="text-4xl font-extrabold text-gray-900">What Our Clients Say</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Real experiences from families and professionals who trusted us with their financial journey.</p>
+            </div>
+            <div class="relative">
+                <div id="tSlider" class="relative min-h-[26rem] sm:min-h-[24rem]">
+                <div class="t-slide active">
+                    <div class="bg-white rounded-[2rem] border border-gray-100 shadow-xl shadow-gray-200/60 p-8 sm:p-12 text-center max-w-3xl mx-auto">
+                        <svg class="w-12 h-12 mx-auto text-blue-100" fill="currentColor" viewBox="0 0 24 24"><path d="M9.13 8.5c-2.02 0-3.63 1.6-3.63 3.6 0 2 1.6 3.6 3.63 3.6.36 0 .7-.05 1.02-.14-.3 1.3-1.4 2.36-2.9 2.74-.36.1-.6.45-.53.82.07.4.45.66.85.57 2.8-.66 4.76-3.1 4.76-6.06V12.1c0-2-1.6-3.6-3.63-3.6h.06zm9.24 0c-2.02 0-3.63 1.6-3.63 3.6 0 2 1.6 3.6 3.63 3.6.36 0 .7-.05 1.02-.14-.3 1.3-1.4 2.36-2.9 2.74-.36.1-.6.45-.53.82.08.4.46.66.86.57 2.8-.66 4.76-3.1 4.76-6.06V12.1c0-2-1.6-3.6-3.63-3.6h.06z"/></svg>
+                        <div class="flex justify-center gap-1 mt-4 text-amber-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                        </div>
+                        <p class="mt-6 text-lg sm:text-xl text-gray-700 leading-relaxed">This team helped me purchase my flat a year back. They stood by me at every bump and the entire process went smoothly. It's almost a year now, yet the support and services still continue at no cost — it's amazing. I sincerely thank Mr. C. V. Gorabal, who walked into my life as a consultant and turned out to be one of my best friends. This kind of unconditional service is rare. I recommend this company to everyone looking for sincere service.</p>
+                        <div class="mt-8 flex items-center justify-center gap-4">
+                            <div class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 text-white flex items-center justify-center text-lg font-extrabold shadow-md">AP</div>
+                            <div class="text-left">
+                                <p class="font-bold text-gray-900">Dr. Anju Putanpurayil</p>
+                                <p class="text-sm text-blue-600 font-medium">Doctor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-slide">
+                    <div class="bg-white rounded-[2rem] border border-gray-100 shadow-xl shadow-gray-200/60 p-8 sm:p-12 text-center max-w-3xl mx-auto">
+                        <svg class="w-12 h-12 mx-auto text-blue-100" fill="currentColor" viewBox="0 0 24 24"><path d="M9.13 8.5c-2.02 0-3.63 1.6-3.63 3.6 0 2 1.6 3.6 3.63 3.6.36 0 .7-.05 1.02-.14-.3 1.3-1.4 2.36-2.9 2.74-.36.1-.6.45-.53.82.07.4.45.66.85.57 2.8-.66 4.76-3.1 4.76-6.06V12.1c0-2-1.6-3.6-3.63-3.6h.06zm9.24 0c-2.02 0-3.63 1.6-3.63 3.6 0 2 1.6 3.6 3.63 3.6.36 0 .7-.05 1.02-.14-.3 1.3-1.4 2.36-2.9 2.74-.36.1-.6.45-.53.82.08.4.46.66.86.57 2.8-.66 4.76-3.1 4.76-6.06V12.1c0-2-1.6-3.6-3.63-3.6h.06z"/></svg>
+                        <div class="flex justify-center gap-1 mt-4 text-amber-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                        </div>
+                        <p class="mt-6 text-lg sm:text-xl text-gray-700 leading-relaxed">I have been taking the services of Mr. Gorabal and the team at Risk Redefined IMF LLP for the past 10+ years. Their services are very prompt and meticulous. I am very happy. Best wishes to them.</p>
+                        <div class="mt-8 flex items-center justify-center gap-4">
+                            <div class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 text-white flex items-center justify-center text-lg font-extrabold shadow-md">SR</div>
+                            <div class="text-left">
+                                <p class="font-bold text-gray-900">Sharath Rao</p>
+                                <p class="text-sm text-blue-600 font-medium">Partner, KPMG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-slide">
+                    <div class="bg-white rounded-[2rem] border border-gray-100 shadow-xl shadow-gray-200/60 p-8 sm:p-12 text-center max-w-3xl mx-auto">
+                        <svg class="w-12 h-12 mx-auto text-blue-100" fill="currentColor" viewBox="0 0 24 24"><path d="M9.13 8.5c-2.02 0-3.63 1.6-3.63 3.6 0 2 1.6 3.6 3.63 3.6.36 0 .7-.05 1.02-.14-.3 1.3-1.4 2.36-2.9 2.74-.36.1-.6.45-.53.82.07.4.45.66.85.57 2.8-.66 4.76-3.1 4.76-6.06V12.1c0-2-1.6-3.6-3.63-3.6h.06zm9.24 0c-2.02 0-3.63 1.6-3.63 3.6 0 2 1.6 3.6 3.63 3.6.36 0 .7-.05 1.02-.14-.3 1.3-1.4 2.36-2.9 2.74-.36.1-.6.45-.53.82.08.4.46.66.86.57 2.8-.66 4.76-3.1 4.76-6.06V12.1c0-2-1.6-3.6-3.63-3.6h.06z"/></svg>
+                        <div class="flex justify-center gap-1 mt-4 text-amber-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                        </div>
+                        <p class="mt-6 text-lg sm:text-xl text-gray-700 leading-relaxed">Mr. Gorabal helped me get my home loan. It was a long journey with multiple obstacles, and he stood by us for the entire 2–3 years with great patience and ensured we got through. I highly recommend him — he is professional, trustworthy, and gives you only the right options that are legal and safe for you.</p>
+                        <div class="mt-8 flex items-center justify-center gap-4">
+                            <div class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 text-white flex items-center justify-center text-lg font-extrabold shadow-md">MK</div>
+                            <div class="text-left">
+                                <p class="font-bold text-gray-900">Mohan Kumar</p>
+                                <p class="text-sm text-blue-600 font-medium">NRI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-slide">
+                    <div class="bg-white rounded-[2rem] border border-gray-100 shadow-xl shadow-gray-200/60 p-8 sm:p-12 text-center max-w-3xl mx-auto">
+                        <svg class="w-12 h-12 mx-auto text-blue-100" fill="currentColor" viewBox="0 0 24 24"><path d="M9.13 8.5c-2.02 0-3.63 1.6-3.63 3.6 0 2 1.6 3.6 3.63 3.6.36 0 .7-.05 1.02-.14-.3 1.3-1.4 2.36-2.9 2.74-.36.1-.6.45-.53.82.07.4.45.66.85.57 2.8-.66 4.76-3.1 4.76-6.06V12.1c0-2-1.6-3.6-3.63-3.6h.06zm9.24 0c-2.02 0-3.63 1.6-3.63 3.6 0 2 1.6 3.6 3.63 3.6.36 0 .7-.05 1.02-.14-.3 1.3-1.4 2.36-2.9 2.74-.36.1-.6.45-.53.82.08.4.46.66.86.57 2.8-.66 4.76-3.1 4.76-6.06V12.1c0-2-1.6-3.6-3.63-3.6h.06z"/></svg>
+                        <div class="flex justify-center gap-1 mt-4 text-amber-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                        </div>
+                        <p class="mt-6 text-lg sm:text-xl text-gray-700 leading-relaxed">I recently had the pleasure of working with Risk Redefined and couldn't be more impressed. Their experienced team provides exceptional service with proper documentation and thorough guidance. The dedicated advisors are always available to answer questions, ensuring a seamless experience. Highly recommended for their professionalism and commitment to client satisfaction.</p>
+                        <div class="mt-8 flex items-center justify-center gap-4">
+                            <div class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 text-white flex items-center justify-center text-lg font-extrabold shadow-md">VB</div>
+                            <div class="text-left">
+                                <p class="font-bold text-gray-900">Vijayanand Betageri</p>
+                                <p class="text-sm text-blue-600 font-medium">Business Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-slide">
+                    <div class="bg-white rounded-[2rem] border border-gray-100 shadow-xl shadow-gray-200/60 p-8 sm:p-12 text-center max-w-3xl mx-auto">
+                        <svg class="w-12 h-12 mx-auto text-blue-100" fill="currentColor" viewBox="0 0 24 24"><path d="M9.13 8.5c-2.02 0-3.63 1.6-3.63 3.6 0 2 1.6 3.6 3.63 3.6.36 0 .7-.05 1.02-.14-.3 1.3-1.4 2.36-2.9 2.74-.36.1-.6.45-.53.82.07.4.45.66.85.57 2.8-.66 4.76-3.1 4.76-6.06V12.1c0-2-1.6-3.6-3.63-3.6h.06zm9.24 0c-2.02 0-3.63 1.6-3.63 3.6 0 2 1.6 3.6 3.63 3.6.36 0 .7-.05 1.02-.14-.3 1.3-1.4 2.36-2.9 2.74-.36.1-.6.45-.53.82.08.4.46.66.86.57 2.8-.66 4.76-3.1 4.76-6.06V12.1c0-2-1.6-3.6-3.63-3.6h.06z"/></svg>
+                        <div class="flex justify-center gap-1 mt-4 text-amber-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.28 3.95a1 1 0 00.95.69h4.15c.97 0 1.37 1.24.59 1.81l-3.36 2.44a1 1 0 00-.36 1.12l1.28 3.95c.3.92-.75 1.69-1.54 1.12l-3.36-2.44a1 1 0 00-1.18 0l-3.36 2.44c-.79.57-1.84-.2-1.54-1.12l1.28-3.95a1 1 0 00-.36-1.12L2.33 9.38c-.78-.57-.38-1.81.59-1.81h4.15a1 1 0 00.95-.69l1.28-3.95z"/></svg>
+                        </div>
+                        <p class="mt-6 text-lg sm:text-xl text-gray-700 leading-relaxed">Mr. Gorabal helped me with a balance transfer of my home loan to HDFC Bank. The process was lengthy due to Covid, but he ensured everything was done on time with no delays. He is very responsive and keeps the customer posted on the loan status. Thank you for making the loan process a smooth journey for us.</p>
+                        <div class="mt-8 flex items-center justify-center gap-4">
+                            <div class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 text-white flex items-center justify-center text-lg font-extrabold shadow-md">SR</div>
+                            <div class="text-left">
+                                <p class="font-bold text-gray-900">Shwetha Rao</p>
+                                <p class="text-sm text-blue-600 font-medium">Test Manager, Maveric Systems Ltd.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="flex items-center justify-center gap-4 mt-8">
+                    <button id="tPrev" aria-label="Previous testimonial" class="w-11 h-11 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-600 hover:text-blue-600 hover:border-blue-300 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <div class="flex items-center gap-2">
+                <button data-t-dot="0" aria-label="Go to testimonial 1" class="t-dot w-2.5 h-2.5 rounded-full transition-all bg-blue-600 w-7"></button>
+                <button data-t-dot="1" aria-label="Go to testimonial 2" class="t-dot w-2.5 h-2.5 rounded-full transition-all bg-gray-300"></button>
+                <button data-t-dot="2" aria-label="Go to testimonial 3" class="t-dot w-2.5 h-2.5 rounded-full transition-all bg-gray-300"></button>
+                <button data-t-dot="3" aria-label="Go to testimonial 4" class="t-dot w-2.5 h-2.5 rounded-full transition-all bg-gray-300"></button>
+                <button data-t-dot="4" aria-label="Go to testimonial 5" class="t-dot w-2.5 h-2.5 rounded-full transition-all bg-gray-300"></button>
+                    </div>
+                    <button id="tNext" aria-label="Next testimonial" class="w-11 h-11 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-600 hover:text-blue-600 hover:border-blue-300 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="testimonials.html" class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-bold text-white bg-gray-900 rounded-full hover:bg-blue-600 transition-colors shadow-md">
+                    View More Testimonials
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
             </div>
         </div>
     </section>
@@ -308,7 +449,7 @@
                             <option value="Travel Insurance">Travel Insurance</option>
                             <option value="Mutual Funds">Mutual Funds</option>
                             <option value="Home Loans">Home Loans</option>
-                            <option value="Loan Against Property">Loan Against Property</option>
+                            <option value="Loan Against Property / Lease Rental Discounting">Loan Against Property / Lease Rental Discounting</option>
                             <option value="Not sure yet">Not sure yet &mdash; help me choose</option>
                         </select>
                     </div>
@@ -332,7 +473,7 @@
                         WhatsApp Us
                     </button>
                 </div>
-                <p class="text-xs text-gray-500 text-center pt-1">By submitting, you agree to be contacted by our advisors. No spam, ever.</p>
+                <p class="text-xs text-gray-500 text-center pt-1">By submitting, you agree to be contacted by our Experts. No spam, ever.</p>
             </form>
         </div>
     </section>
@@ -340,14 +481,14 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-12 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
             <div class="space-y-4">
                 <div class="text-2xl font-extrabold tracking-tighter text-white flex items-center gap-2.5">
-                    <img src="main_logo.png" alt="Risk Redefined Logo" class="w-9 h-9 shrink-0 rounded-lg">
-                    Risk Redefined
+                    <img src="main_logo.png" alt="Risk Redefined Logo" class="w-8 h-8 shrink-0 rounded-lg">
+                    <span class="brand-name">Risk Redefined</span>
                 </div>
                 <p class="text-sm leading-relaxed max-w-xs">Risk Redefined Insurance Marketing LLP &mdash; your single-window partner for insurance, loans, and mutual funds since 2017.</p>
             </div>
             <div>
                 <h5 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Services</h5>
-                <ul class="space-y-2.5 text-sm columns-1"><li><a href="life-insurance.html" class="hover:text-white transition-colors">Life Insurance</a></li><li><a href="health-insurance.html" class="hover:text-white transition-colors">Health Insurance</a></li><li><a href="motor-insurance.html" class="hover:text-white transition-colors">Motor Insurance</a></li><li><a href="property-insurance.html" class="hover:text-white transition-colors">Property Insurance</a></li><li><a href="travel-insurance.html" class="hover:text-white transition-colors">Travel Insurance</a></li><li><a href="mutual-funds.html" class="hover:text-white transition-colors">Mutual Funds</a></li><li><a href="home-loans.html" class="hover:text-white transition-colors">Home Loans</a></li><li><a href="loan-against-property.html" class="hover:text-white transition-colors">Loan Against Property</a></li></ul>
+                <ul class="space-y-2.5 text-sm columns-1"><li><a href="life-insurance.html" class="hover:text-white transition-colors">Life Insurance</a></li><li><a href="health-insurance.html" class="hover:text-white transition-colors">Health Insurance</a></li><li><a href="motor-insurance.html" class="hover:text-white transition-colors">Motor Insurance</a></li><li><a href="property-insurance.html" class="hover:text-white transition-colors">Property Insurance</a></li><li><a href="travel-insurance.html" class="hover:text-white transition-colors">Travel Insurance</a></li><li><a href="mutual-funds.html" class="hover:text-white transition-colors">Mutual Funds</a></li><li><a href="home-loans.html" class="hover:text-white transition-colors">Home Loans</a></li><li><a href="loan-against-property.html" class="hover:text-white transition-colors">Loan Against Property / Lease Rental Discounting</a></li></ul>
             </div>
             <div>
                 <h5 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Company</h5>
@@ -355,6 +496,7 @@
                     <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
                     <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
                     <li><a href="services.html" class="hover:text-white transition-colors">All Services</a></li>
+                    <li><a href="testimonials.html" class="hover:text-white transition-colors">Testimonials</a></li>
                     <li><a href="index.html#faq" class="hover:text-white transition-colors">FAQ</a></li>
                     <li><a href="contact.html" class="hover:text-white transition-colors">Book a Call</a></li>
                 </ul>
@@ -438,6 +580,30 @@
                 window.open(url, '_blank', 'noopener');
             });
         })();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = Array.from(document.querySelectorAll('#tSlider .t-slide'));
+            const dots = Array.from(document.querySelectorAll('[data-t-dot]'));
+            if (!slides.length) return;
+            let idx = 0, timer = null;
+            function show(n) {
+                slides[idx].classList.remove('active');
+                dots[idx].classList.remove('bg-blue-600', 'w-7');
+                dots[idx].classList.add('bg-gray-300');
+                idx = (n + slides.length) % slides.length;
+                slides[idx].classList.add('active');
+                dots[idx].classList.add('bg-blue-600', 'w-7');
+                dots[idx].classList.remove('bg-gray-300');
+            }
+            function next() { show(idx + 1); }
+            function prev() { show(idx - 1); }
+            function restart() { clearInterval(timer); timer = setInterval(next, 6000); }
+            document.getElementById('tNext').addEventListener('click', () => { next(); restart(); });
+            document.getElementById('tPrev').addEventListener('click', () => { prev(); restart(); });
+            dots.forEach((d, i) => d.addEventListener('click', () => { show(i); restart(); }));
+            restart();
+        });
     </script>
 </body>
 </html>

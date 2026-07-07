@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Insurance | Risk Redefined</title>
-    <meta name="description" content="Travel stress-free by securing yourself and your family against any unforeseen challenges or setbacks.">
+    <title>Insurance, Loans & Mutual Funds | Risk Redefined</title>
+    <meta name="description" content="Risk Redefined Insurance Marketing LLP — your single-window partner for insurance, loans, and mutual funds.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .slide { opacity: 0; transition: opacity 0.8s ease-in-out; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-        .slide.active { opacity: 1; position: relative; }
+        .slide.active { opacity: 1; position: absolute; }
+        .slider-wrapper { position: relative; width: 100%; height: 100%; }
         html { scroll-padding-top: 6rem; }
+            .brand-name { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 500; letter-spacing: normal; }
+            .t-slide { opacity: 0; transition: opacity 0.7s ease-in-out; position: absolute; top: 0; left: 0; width: 100%; }
+        .t-slide.active { opacity: 1; position: relative; }
     </style>
 </head>
 <body class="font-sans text-gray-800 antialiased bg-gray-50 selection:bg-blue-200">
     <nav class="flex items-center justify-between px-6 py-5 lg:px-12 bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
-        <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-gray-900 flex items-center gap-2.5">
-            <img src="main_logo.png" alt="Risk Redefined Logo" class="w-14 h-14 shrink-0 rounded-xl">
-            <span class="leading-none">Risk <span class="text-gray-900">Redefined Insurance Marketing LLP</span></span>
+        <a href="index.html" class="text-xl font-extrabold tracking-tighter text-gray-900 flex items-center gap-2.5">
+            <img src="main_logo.png" alt="Risk Redefined Logo" class="w-11 h-11 shrink-0 rounded-xl">
+            <span class="leading-none brand-name">Risk <span class="text-gray-900">Redefined Insurance Marketing LLP</span></span>
         </a>
         <div class="hidden md:flex items-center space-x-8 font-medium text-gray-600 text-sm uppercase tracking-wide">
             <a href="index.html" class="hover:text-blue-600 transition-colors">Home</a>
             <a href="services.html" class="hover:text-blue-600 transition-colors text-blue-600">Services</a>
             <a href="about.html" class="hover:text-blue-600 transition-colors">About Us</a>
+            <a href="testimonials.html" class="hover:text-blue-600 transition-colors">Testimonials</a>
             <a href="contact.html" class="px-5 py-2.5 text-white bg-gray-900 rounded-full hover:bg-blue-600 transition-all shadow-md">Book a Call</a>
         </div>
         <!-- Mobile menu -->
@@ -33,6 +38,7 @@
                 <a href="index.html" class="px-4 py-2.5 rounded-xl hover:bg-gray-50">Home</a>
                 <a href="services.html" class="px-4 py-2.5 rounded-xl hover:bg-gray-50">Services</a>
                 <a href="about.html" class="px-4 py-2.5 rounded-xl hover:bg-gray-50">About Us</a>
+                <a href="testimonials.html" class="px-4 py-2.5 rounded-xl hover:bg-gray-50">Testimonials</a>
                 <a href="contact.html" class="px-4 py-2.5 rounded-xl bg-gray-900 text-white text-center mt-1">Book a Call</a>
             </div>
         </details>
@@ -50,7 +56,7 @@
             <h1 class="text-4xl lg:text-6xl font-extrabold tracking-tight">Travel Insurance</h1>
             <p class="mt-6 text-lg text-white/90 leading-relaxed max-w-2xl">Travel brings excitement, but it also exposes you to unpredictable risks like transit delays, lost baggage, or sudden overseas medical emergencies. Travel insurance acts as your safety net, ensuring a single travel mishap doesn't turn into an expensive financial crisis.</p>
             <a href="contact.html" class="inline-flex items-center gap-2 mt-8 px-7 py-3.5 bg-white text-sky-600 rounded-full font-bold text-sm hover:bg-gray-100 transition-colors shadow-lg">
-                Talk to an Advisor
+                Talk to an Expert
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </a>
         </div>
@@ -141,7 +147,7 @@
                             <option value="Travel Insurance">Travel Insurance</option>
                             <option value="Mutual Funds">Mutual Funds</option>
                             <option value="Home Loans">Home Loans</option>
-                            <option value="Loan Against Property">Loan Against Property</option>
+                            <option value="Loan Against Property / Lease Rental Discounting">Loan Against Property / Lease Rental Discounting</option>
                             <option value="Not sure yet">Not sure yet &mdash; help me choose</option>
                         </select>
                     </div>
@@ -165,7 +171,7 @@
                         WhatsApp Us
                     </button>
                 </div>
-                <p class="text-xs text-gray-500 text-center pt-1">By submitting, you agree to be contacted by our advisors. No spam, ever.</p>
+                <p class="text-xs text-gray-500 text-center pt-1">By submitting, you agree to be contacted by our expert. No spam, ever.</p>
             </form>
         </div>
     </section>
@@ -173,14 +179,14 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-12 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
             <div class="space-y-4">
                 <div class="text-2xl font-extrabold tracking-tighter text-white flex items-center gap-2.5">
-                    <img src="main_logo.png" alt="Risk Redefined Logo" class="w-9 h-9 shrink-0 rounded-lg">
-                    Risk Redefined
+                    <img src="main_logo.png" alt="Risk Redefined Logo" class="w-8 h-8 shrink-0 rounded-lg">
+                    <span class="brand-name">Risk Redefined</span>
                 </div>
                 <p class="text-sm leading-relaxed max-w-xs">Risk Redefined Insurance Marketing LLP &mdash; your single-window partner for insurance, loans, and mutual funds since 2017.</p>
             </div>
             <div>
                 <h5 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Services</h5>
-                <ul class="space-y-2.5 text-sm columns-1"><li><a href="life-insurance.html" class="hover:text-white transition-colors">Life Insurance</a></li><li><a href="health-insurance.html" class="hover:text-white transition-colors">Health Insurance</a></li><li><a href="motor-insurance.html" class="hover:text-white transition-colors">Motor Insurance</a></li><li><a href="property-insurance.html" class="hover:text-white transition-colors">Property Insurance</a></li><li><a href="travel-insurance.html" class="hover:text-white transition-colors">Travel Insurance</a></li><li><a href="mutual-funds.html" class="hover:text-white transition-colors">Mutual Funds</a></li><li><a href="home-loans.html" class="hover:text-white transition-colors">Home Loans</a></li><li><a href="loan-against-property.html" class="hover:text-white transition-colors">Loan Against Property</a></li></ul>
+                <ul class="space-y-2.5 text-sm columns-1"><li><a href="life-insurance.html" class="hover:text-white transition-colors">Life Insurance</a></li><li><a href="health-insurance.html" class="hover:text-white transition-colors">Health Insurance</a></li><li><a href="motor-insurance.html" class="hover:text-white transition-colors">Motor Insurance</a></li><li><a href="property-insurance.html" class="hover:text-white transition-colors">Property Insurance</a></li><li><a href="travel-insurance.html" class="hover:text-white transition-colors">Travel Insurance</a></li><li><a href="mutual-funds.html" class="hover:text-white transition-colors">Mutual Funds</a></li><li><a href="home-loans.html" class="hover:text-white transition-colors">Home Loans</a></li><li><a href="loan-against-property.html" class="hover:text-white transition-colors">Loan Against Property / Lease Rental Discounting</a></li></ul>
             </div>
             <div>
                 <h5 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Company</h5>
@@ -188,6 +194,7 @@
                     <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
                     <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
                     <li><a href="services.html" class="hover:text-white transition-colors">All Services</a></li>
+                    <li><a href="testimonials.html" class="hover:text-white transition-colors">Testimonials</a></li>
                     <li><a href="index.html#faq" class="hover:text-white transition-colors">FAQ</a></li>
                     <li><a href="contact.html" class="hover:text-white transition-colors">Book a Call</a></li>
                 </ul>

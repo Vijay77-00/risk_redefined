@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance, Loans & Mutual Funds | Risk Redefined</title>
+    <meta name="description" content="Risk Redefined Insurance Marketing LLP — your single-window partner for insurance, loans, and mutual funds.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .slide { opacity: 0; transition: opacity 0.8s ease-in-out; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .slide.active { opacity: 1; position: absolute; }
+        .slider-wrapper { position: relative; width: 100%; height: 100%; }
+        html { scroll-padding-top: 6rem; }
+            .brand-name { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 500; letter-spacing: normal; }
+            .t-slide { opacity: 0; transition: opacity 0.7s ease-in-out; position: absolute; top: 0; left: 0; width: 100%; }
+        .t-slide.active { opacity: 1; position: relative; }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50 selection:bg-blue-200">
+    <nav class="flex items-center justify-between px-6 py-5 lg:px-12 bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+        <a href="index.html" class="text-xl font-extrabold tracking-tighter text-gray-900 flex items-center gap-2.5">
+            <img src="main_logo.png" alt="Risk Redefined Logo" class="w-11 h-11 shrink-0 rounded-xl">
+            <span class="leading-none brand-name">Risk <span class="text-gray-900">Redefined Insurance Marketing LLP</span></span>
+        </a>
+        <div class="hidden md:flex items-center space-x-8 font-medium text-gray-600 text-sm uppercase tracking-wide">
+            <a href="index.html" class="hover:text-blue-600 transition-colors">Home</a>
+            <a href="services.html" class="hover:text-blue-600 transition-colors">Services</a>
+            <a href="about.html" class="hover:text-blue-600 transition-colors">About Us</a>
+            <a href="testimonials.html" class="hover:text-blue-600 transition-colors text-blue-600">Testimonials</a>
+            <a href="contact.html" class="px-5 py-2.5 text-white bg-gray-900 rounded-full hover:bg-blue-600 transition-all shadow-md">Book a Call</a>
+        </div>
+        <!-- Mobile menu -->
+        <details class="md:hidden relative">
+            <summary class="list-none cursor-pointer p-2 -mr-2 text-gray-700">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </summary>
+            <div class="absolute right-0 mt-3 w-56 bg-white rounded-2xl shadow-xl border border-gray-100 p-3 flex flex-col gap-1 text-sm font-medium text-gray-700">
+                <a href="index.html" class="px-4 py-2.5 rounded-xl hover:bg-gray-50">Home</a>
+                <a href="services.html" class="px-4 py-2.5 rounded-xl hover:bg-gray-50">Services</a>
+                <a href="about.html" class="px-4 py-2.5 rounded-xl hover:bg-gray-50">About Us</a>
+                <a href="testimonials.html" class="px-4 py-2.5 rounded-xl hover:bg-gray-50">Testimonials</a>
+                <a href="contact.html" class="px-4 py-2.5 rounded-xl bg-gray-900 text-white text-center mt-1">Book a Call</a>
+            </div>
+        </details>
+    </nav>
+    <header class="max-w-5xl mx-auto px-6 lg:px-12 pt-16 pb-10 text-center">
+        <p class="text-sm font-bold uppercase tracking-widest text-blue-600 mb-4">Testimonials</p>
+        <h1 class="text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight">Trusted by families &amp; professionals across India.</h1>
+        <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">For over a decade, our clients have relied on us for honest advice and unwavering support across loans, insurance, and investments. Here is what they have to say.</p>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-6 lg:px-12 py-14">
+        <div class="columns-1 md:columns-2 lg:columns-3 gap-6">
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">I have been taking the services of Mr. Gorabal and the team at Risk Redefined IMF LLP for the past 10+ years. Their services are very prompt and meticulous. I am very happy. Best wishes to them.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 text-white flex items-center justify-center font-extrabold shadow-md">SR</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Sharath Rao</p>
+                        <p class="text-sm text-gray-500">Partner, KPMG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Very efficient team for all loans.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white flex items-center justify-center font-extrabold shadow-md">BG</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Bhasker G</p>
+                        <p class="text-sm text-gray-500">Sr. Manager, Philips India Ltd.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">I recently had the pleasure of working with Risk Redefined Insurance Marketing LLP, and I couldn't be more impressed! Their experienced team provides exceptional service with proper documentation and thorough guidance. The dedicated financial advisors are always available to answer questions, ensuring a seamless experience. If you're looking for reliable banking and finance solutions, I highly recommend Risk Redefined for their professionalism and commitment to client satisfaction.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 text-white flex items-center justify-center font-extrabold shadow-md">VB</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Vijayanand Betageri</p>
+                        <p class="text-sm text-gray-500">Business Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Mr. Gorabal has helped me in getting my home loan. It was a long journey for us with multiple obstacles, and Gorabal stood by us for the entire 2–3 years with much patience and ensured we got through. I highly recommend him as he is very professional, trustworthy and provides you with only the right options which are legal and safe for you.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-rose-500 to-pink-600 text-white flex items-center justify-center font-extrabold shadow-md">MK</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Mohan Kumar</p>
+                        <p class="text-sm text-gray-500">NRI</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Mr. Gorabal was very helpful in getting me the loan with minimum tension. The process was very fast and, as promised, got me the maximum loan. Very good company to deal with.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-indigo-600 to-blue-600 text-white flex items-center justify-center font-extrabold shadow-md">C</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Chandrashekar</p>
+                        <p class="text-sm text-gray-500">Educationalist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">This team helped me purchase my flat a year back. They stood by me at every bump and the entire process went well. It's almost a year now, but the support and services still continue at no cost. It's amazing. I genuinely felt that I must do something and decided to write this review. I sincerely thank Mr. C. V. Gorabal, who walked into my life as a consultant and turned out to be one of my best friends. I am sure this attitude and unconditional service is rare. I recommend this company to everyone who is looking for 'sincere service' and wish this company all the best.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 text-white flex items-center justify-center font-extrabold shadow-md">AP</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Dr. Anju Putanpurayil</p>
+                        <p class="text-sm text-gray-500">Doctor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Excellent service… They are customer centric… They do good background work and provide the right guidance to the customer. Had a fantastic experience while processing my home loan.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 text-white flex items-center justify-center font-extrabold shadow-md">NK</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Naveen Kumar</p>
+                        <p class="text-sm text-gray-500">IT Professional</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Best people to guide you right for your investments.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white flex items-center justify-center font-extrabold shadow-md">RS</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Roopesh Shroff</p>
+                        <p class="text-sm text-gray-500">Business Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Mr. Gorabal helped me do a balance transfer of my home loan to HDFC Bank. The bank process was a lengthy one due to Covid, but he ensured that everything was done at the right time and no delay was experienced. He is very responsive and keeps the customer posted on the loan status. Thank you, Gorabal sir, for making the loan process a smooth journey for us. Would surely recommend you to my contacts in case someone has a requirement.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 text-white flex items-center justify-center font-extrabold shadow-md">SR</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Shwetha Rao</p>
+                        <p class="text-sm text-gray-500">IT Professional</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Excellent service from this team of professionals! Customer centric — they understand your need, do their homework and get the work done! I would highly recommend this team of professionals to all who are looking for business, home and personal loans! I had a great experience with them!</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-rose-500 to-pink-600 text-white flex items-center justify-center font-extrabold shadow-md">NN</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Nagaraj N</p>
+                        <p class="text-sm text-gray-500">Executive Engineer, PWD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Very very good service.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-indigo-600 to-blue-600 text-white flex items-center justify-center font-extrabold shadow-md">RK</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Ravi Kumar</p>
+                        <p class="text-sm text-gray-500">Auditor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Very very good service.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 text-white flex items-center justify-center font-extrabold shadow-md">SK</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Santosh Kumar</p>
+                        <p class="text-sm text-gray-500">IT Professional</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Mr. Gorabal and his firm came highly recommended, and we are happy to be associated. Very responsive and excellent services.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 text-white flex items-center justify-center font-extrabold shadow-md">MN</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Merlyn Netto</p>
+                        <p class="text-sm text-gray-500">Executive Assistant</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Risk Redefined LLP is a professionally run financial, mutual funds and health insurance company. They understand the requirements of each individual scenario and advise accordingly, keeping in mind the futuristic requirements.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white flex items-center justify-center font-extrabold shadow-md">KK</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Krishnaji Kulkarni</p>
+                        <p class="text-sm text-gray-500">Asst. Vice President, Bangalore International Airport</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Excellent customer service.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 text-white flex items-center justify-center font-extrabold shadow-md">HA</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Harsha A</p>
+                        <p class="text-sm text-gray-500">Associate Project Manager, Borderless Access Pvt Ltd.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Service is excellent.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-rose-500 to-pink-600 text-white flex items-center justify-center font-extrabold shadow-md">MG</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">M Govindaswamy</p>
+                        <p class="text-sm text-gray-500">Proprietor, Unicorn Carz</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Good service.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-indigo-600 to-blue-600 text-white flex items-center justify-center font-extrabold shadow-md">NC</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Narendra Choudhari</p>
+                        <p class="text-sm text-gray-500">IT Professional</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Excellent service and advice.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 text-white flex items-center justify-center font-extrabold shadow-md">MJ</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Manjunath G</p>
+                        <p class="text-sm text-gray-500">Interior Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-inside-avoid mb-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all p-7">
+                <p class="text-gray-700 leading-relaxed">Excellent and friendly people.</p>
+                <div class="mt-6 pt-5 border-t border-gray-100 flex items-center gap-4">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 text-white flex items-center justify-center font-extrabold shadow-md">VP</div>
+                    <div>
+                        <p class="font-bold text-gray-900 leading-tight">Veeranagouda K Patil</p>
+                        <p class="text-sm text-gray-500">Civil Engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-xs text-gray-400 mt-6 text-center">Testimonials are shared by real clients of Risk Redefined Insurance Marketing LLP.</p>
+    </section>
+
+    <section class="bg-gray-900 py-20 text-white rounded-t-[3rem] mt-8">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold mb-4">Ready to write your own success story?</h2>
+            <p class="text-gray-400 max-w-xl mx-auto">Book a free, no-obligation consultation and let us build a plan around your goals — just like we did for the clients above.</p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="px-8 py-4 text-sm font-bold text-white bg-blue-600 rounded-full hover:bg-blue-500 transition-colors shadow-lg">Book a Free Call</a>
+                <a href="https://wa.me/919343867723" class="px-8 py-4 text-sm font-bold text-white bg-green-600 rounded-full hover:bg-green-500 transition-colors shadow-lg inline-flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.37-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.26-.29.57-.36.76-.36l.55.01c.18.01.41-.07.64.49.24.57.81 1.99.88 2.13.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.19.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.75 1.87.89.28.14.46.21.53.32.07.12.07.66-.17 1.34z"/></svg>
+                    WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+<footer class="bg-gray-950 text-gray-400 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+            <div class="space-y-4">
+                <div class="text-2xl font-extrabold tracking-tighter text-white flex items-center gap-2.5">
+                    <img src="main_logo.png" alt="Risk Redefined Logo" class="w-8 h-8 shrink-0 rounded-lg">
+                    <span class="brand-name">Risk Redefined</span>
+                </div>
+                <p class="text-sm leading-relaxed max-w-xs">Risk Redefined Insurance Marketing LLP &mdash; your single-window partner for insurance, loans, and mutual funds since 2017.</p>
+            </div>
+            <div>
+                <h5 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Services</h5>
+                <ul class="space-y-2.5 text-sm columns-1"><li><a href="life-insurance.html" class="hover:text-white transition-colors">Life Insurance</a></li><li><a href="health-insurance.html" class="hover:text-white transition-colors">Health Insurance</a></li><li><a href="motor-insurance.html" class="hover:text-white transition-colors">Motor Insurance</a></li><li><a href="property-insurance.html" class="hover:text-white transition-colors">Property Insurance</a></li><li><a href="travel-insurance.html" class="hover:text-white transition-colors">Travel Insurance</a></li><li><a href="mutual-funds.html" class="hover:text-white transition-colors">Mutual Funds</a></li><li><a href="home-loans.html" class="hover:text-white transition-colors">Home Loans</a></li><li><a href="loan-against-property.html" class="hover:text-white transition-colors">Loan Against Property / Lease Rental Discounting</a></li></ul>
+            </div>
+            <div>
+                <h5 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Company</h5>
+                <ul class="space-y-2.5 text-sm">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-white transition-colors">All Services</a></li>
+                    <li><a href="testimonials.html" class="hover:text-white transition-colors">Testimonials</a></li>
+                    <li><a href="index.html#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition-colors">Book a Call</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Get in Touch</h5>
+                <ul class="space-y-2.5 text-sm">
+                    <li>89, 1st Floor, 16th Cross, Margosa Rd,<br>Malleshwaram, Bengaluru,<br>Karnataka 560055</li>
+                    <li><a href="mailto:info@riskredefined.in" class="hover:text-white transition-colors">info@riskredefined.in</a></li>
+                    <li><a href="tel:+919343867723" class="hover:text-white transition-colors">+91 9343867723</a></li>
+                </ul>
+                <a href="https://wa.me/919343867723" class="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-green-600 text-white rounded-full text-sm font-semibold hover:bg-green-500 transition-colors">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.37-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.26-.29.57-.36.76-.36l.55.01c.18.01.41-.07.64.49.24.57.81 1.99.88 2.13.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.19.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.75 1.87.89.28.14.46.21.53.32.07.12.07.66-.17 1.34z"/></svg>
+                    Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 mt-12 pt-6 border-t border-white/10 text-xs flex flex-col sm:flex-row gap-2 justify-between">
+            <p>&copy; 2025 Risk Redefined Insurance Marketing LLP. All rights reserved.</p>
+            <p>Insurance products are subject to IRDAI regulations. Mutual fund investments are subject to market risks.</p>
+        </div>
+    </footer>
+</body>
+</html>
