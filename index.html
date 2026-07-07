@@ -7,8 +7,8 @@
     <meta name="description" content="Risk Redefined Insurance Marketing LLP — your single-window partner for insurance, loans, and mutual funds.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .slide { opacity: 0; transition: opacity 0.8s ease-in-out; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-        .slide.active { opacity: 1; position: absolute; }
+        .slide { opacity: 0; transition: opacity 0.8s ease-in-out; position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+        .slide.active { opacity: 1; position: absolute; pointer-events: auto; }
         .slider-wrapper { position: relative; width: 100%; height: 100%; }
         html { scroll-padding-top: 6rem; }
             .brand-name { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 500; letter-spacing: normal; }
@@ -57,15 +57,15 @@
         </div>
         <div class="relative w-full rounded-[2rem] overflow-hidden shadow-2xl" style="padding-bottom: 56.25%;">
             <div class="absolute inset-0">
-                <div class="slide active w-full h-full"><img src="1.png" class="w-full h-full object-contain" alt="Travel Insurance"></div>
-                <div class="slide w-full h-full"><img src="2.png" class="w-full h-full object-contain" alt="Health Insurance"></div>
-                <div class="slide w-full h-full"><img src="3.png" class="w-full h-full object-contain" alt="Life Insurance"></div>
-                <div class="slide w-full h-full"><img src="4.png" class="w-full h-full object-contain" alt="Mutual Funds"></div>
-                <div class="slide w-full h-full"><img src="5.png" class="w-full h-full object-contain" alt="Loans"></div>
+                <div class="slide active w-full h-full"><a href="travel-insurance.html" class="block w-full h-full"><img src="1.png" class="w-full h-full object-contain" alt="Travel Insurance"></a></div>
+                <div class="slide w-full h-full"><a href="health-insurance.html" class="block w-full h-full"><img src="2.png" class="w-full h-full object-contain" alt="Health Insurance"></a></div>
+                <div class="slide w-full h-full"><a href="life-insurance.html" class="block w-full h-full"><img src="3.png" class="w-full h-full object-contain" alt="Life Insurance"></a></div>
+                <div class="slide w-full h-full"><a href="mutual-funds.html" class="block w-full h-full"><img src="4.png" class="w-full h-full object-contain" alt="Mutual Funds"></a></div>
+                <div class="slide w-full h-full"><a href="home-loans.html" class="block w-full h-full"><img src="5.png" class="w-full h-full object-contain" alt="Home Loans"></a></div>
             </div>
         </div>
     </section>
-    <div class="bg-gray-50">
+    <div class="bg-gradient-to-b from-blue-50 to-white py-20">
     <section id="services" class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
         <div class="text-center mb-12">
             <p class="text-sm font-bold uppercase tracking-widest text-blue-600 mb-3">What We Offer</p>
@@ -232,11 +232,11 @@
             </div>
         </div>
     </section>
-    <section id="testimonials" class="bg-gradient-to-b from-gray-50 to-white py-20 border-t border-gray-100">
+    <section id="testimonials" class="bg-gradient-to-b from-pink-50 to-white py-20 border-t border-gray-100">
         <div class="max-w-5xl mx-auto px-6 lg:px-12">
             <div class="text-center mb-12">
                 <p class="text-sm font-bold uppercase tracking-widest text-blue-600 mb-3">Client Stories</p>
-                <h2 class="text-4xl font-extrabold text-gray-900">What Our Clients Say</h2>
+                <h2 class="text-4xl font-extrabold text-gray-900">What Our Clients Say.</h2>
                 <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Real experiences from families and professionals who trusted us with their financial journey.</p>
             </div>
             <div class="relative">
@@ -336,7 +336,7 @@
                             <div class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 text-white flex items-center justify-center text-lg font-extrabold shadow-md">SR</div>
                             <div class="text-left">
                                 <p class="font-bold text-gray-900">Shwetha Rao</p>
-                                <p class="text-sm text-blue-600 font-medium">Test Manager, Maveric Systems Ltd.</p>
+                                <p class="text-sm text-blue-600 font-medium">IT Professional</p>
                             </div>
                         </div>
                     </div>
